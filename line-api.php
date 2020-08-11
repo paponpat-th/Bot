@@ -19,7 +19,7 @@ if (!empty($bot->isEvents)) {
     $bot->replyMessageNew($bot->replyToken, json_encode($bot->message));
 
     // Succeeded
-    if ($bot->isSuccess()) { echo 'Succeeded!'; exit(); }
+    if ($bot->isSuccess()) { echo 'สำเร็จ!'; exit(); }
 
     // Failed
     echo $bot->response->getHTTPStatus . ' ' . $bot->response->getRawBody(); exit();
